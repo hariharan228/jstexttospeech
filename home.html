@@ -1,0 +1,54 @@
+<!doctype html>
+	<head>
+		<style>
+			/* CSS comes here */
+            *{
+                padding:0;
+                margin:0;
+                box-sizing: border-box;
+            }
+			body {
+			    font-family: arial;
+                align-items: center;
+			}
+            .content{
+                margin-top:20rem;
+                margin-left: 30rem;
+            }
+			button {
+                display: inline-block;
+                margin: 10px;
+			    padding:10px;
+			    background-color:#252442;
+			    color: #FFFFFF;
+			    border: 0px;
+			    cursor:pointer;
+			    border-radius: 5px;
+                vertical-align: middle
+			}
+			#output {
+			    background-color:#F9F9F9;
+			    padding:10px;
+			    width: 100%;
+			    margin-top:20px;
+			    line-height:30px;
+			}
+			.hide {
+			    display:none;
+			}
+			.show {
+			    display:block;
+			}
+		</style>
+		<title>JavaScript Speech to Text</title>
+	</head>
+	<body>
+    <div class="content">
+        <h2 style="display: inline-block;vertical-align: middle;">Speech to Text</h2><button type="button" onclick="runSpeechRecognition()">Speech to Text</button> &nbsp; <span id="result"></span>
+        <div id="output" class="hide"></div>
+		
+    </div>
+		<script src="app.js">
+		</script>
+	</body>
+</html>
